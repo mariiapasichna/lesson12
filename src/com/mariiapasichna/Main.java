@@ -1,6 +1,5 @@
 package com.mariiapasichna;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -24,9 +23,14 @@ public class Main {
 
     public static void main(String[] args) throws ParseException {
         Person person = new Person("Mariia", "Pasichna", "Volodimirivna", "18.03.1985");
+        Person person1 = new Person("Pasichna Mariia Volodimirivna");
         getFullName(person);
         getShortName(person);
         getAge(person);
+
+        System.out.println(person1.getLastName1());
+        System.out.println(person1.getFirstName1());
+        System.out.println(person1.getPatronymic1());
     }
 
     private static int getAge(Person person) throws ParseException {
@@ -50,7 +54,7 @@ public class Main {
         return shortName;
     }
 
-    public static StringBuilder getFullName(Person person) {
+    private static StringBuilder getFullName(Person person) {
         StringBuilder fullName = new StringBuilder();
         fullName.append(person.getLastName());
         fullName.append(" ");
