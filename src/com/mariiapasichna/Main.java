@@ -28,9 +28,10 @@ public class Main {
         getShortName(person);
         getAge(person);
 
-        System.out.println(person1.getLastName1());
-        System.out.println(person1.getFirstName1());
-        System.out.println(person1.getPatronymic1());
+        System.out.println(person1.getLastName());
+        System.out.println(person1.getFirstName());
+        System.out.println(person1.getPatronymic());
+        System.out.println(person1.getFullName());
     }
 
     private static int getAge(Person person) throws ParseException {
