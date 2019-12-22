@@ -13,10 +13,6 @@ public class Person {
         this.patronymic = arr[2];
     }
 
-    public String getFullName() {
-        return lastName + " " + firstName + " " + patronymic;
-    }
-
     public Person(String firstName, String lastName, String patronymic, String birthDate) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -53,5 +49,9 @@ public class Person {
 
     public String getBirthDate() {
         return birthDate;
+    }
+
+    public String getFullName() {
+        return lastName + " " + firstName + " " + patronymic;
     }
 }
